@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<style>
+    .inputFlex {
+        display: flex-flow;
+        align-content: space-between;
+    }
+</style>
+
+<body>
+    <div style="border: 2px solid black; width:fit-content; margin:2px ">
+        <form action="result" method="post" style="margin: 15px; width: 290px">
+            <div>
+                <div class="inputFlex">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" /><br>
+                </div>
+                <div class="inputFlex">
+                    <label for="dojo">Dojo Location:</label>
+                    <select class="dojo" name="dojo">
+                        <option value="Arlington">Arlington</option>
+                        <option value="Bellevue">Bellevue</option>
+                        <option value="Boise">Boise</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Dallas">Dallas</option>
+                        <option value="LA">LA</option>
+                        <option value="Oakland">Oakland</option>
+                        <option value="Oc">OC</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="Tulsa">Tulsa</option>
+                    </select>
+                </div>
+                <div class="inputFlex">
+                    <label for="favLang">Favorite Language:</label>
+                    <select class="favLang" name="favLang">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="jQuery">jQuery</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="React">React</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Sass">Angular</option>
+                        <option value="WordPress">WordPress</option>
+                    </select></div>
+                <label for="comment">Comment (optional):</label><br>
+                <textarea name="comment" style="width:270px; height:50px;"></textarea>
+            </div>
+            <button style="background-color:blue; color:white" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
